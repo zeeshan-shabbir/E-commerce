@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+
+import AppRouting from './Routing/Routing'
+
+import Footer from "./Components/Footer/Footer";
+
+import "./css folder/App.css"
+import "./css folder/utilities.css"
+import "./css folder/varaible.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      
+    <AppRouting />
+    {/* <Footer /> */}
+    </>
+  )
 }
 
 export default App;
+

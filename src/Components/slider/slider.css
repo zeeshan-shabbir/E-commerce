@@ -1,0 +1,23 @@
+
+  .slide {
+    width: 100%;
+    height: 70vh;
+}
+.swiper-button-prev,.swiper-button-next{
+    color: #737373b8 !important;
+}
+.swiper-pagination{
+color: black !important;
+}
+:root{
+    --swiper-theme-color:black;
+}
+/* .slide-1 {
+    background-image: url("../../Assets//Images/slider/slider1.jpg");
+}
+.slide-2 {
+    background-image: url("../../Assets//Images/slider/slider2.jpg");
+}
+.slide-3 {
+    background-image: url("../../Assets//Images/slider/slider3.jpg");
+} */

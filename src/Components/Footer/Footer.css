@@ -1,0 +1,43 @@
+
+
+.footerWrapper{
+	
+	background-color: black;
+}
+.footer{
+	max-width: 110rem;
+	margin: 0 auto;
+	color: white;
+	font-size: 3.5rem;
+	padding-top: 2rem;
+
+}
+.footer>div{
+	width: 30rem;
+	text-align: center;
+}
+.footer ul{
+	flex-direction: column;
+
+}
+.footer h1{
+	font-size:70%;
+
+}
+.footer ul li{
+	margin: 1rem 0;
+
+}
+.footer li a{
+	font-size: 50%;
+	color: white;
+}
+.footerContent p{
+	font-size: 50%;
+	margin: 1rem 0;
+	text-align:justify !important;
+}
+.hr{
+	border-bottom: 2px solid red;
+	padding-top: 1rem;
+}

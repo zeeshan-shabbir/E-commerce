@@ -1,0 +1,22 @@
+
+.FProducts{
+    position: relative;
+}
+.FP-h1{
+    margin:2rem 0 2rem 3rem;
+    font-size: 2rem;
+    font-weight: lighter;
+    border-bottom: 2px solid var(--primary_color);
+}
+.swiperSlide{
+    margin: 2rem 0rem;
+}
+.swiperBtns{
+    margin-right: 3rem;
+}
+.swiperBtn{
+    cursor: pointer !important;
+   background-color:transparent;
+   border: none;
+   font-size: 2rem;
+}

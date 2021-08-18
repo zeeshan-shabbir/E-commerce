@@ -1,0 +1,101 @@
+
+.header{
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+    width: 100%;
+    /* height: 12rem; */
+    background-color: transparent;
+    background-color: red;
+    color: black !important;
+    z-index: 999;
+    font-size: 2rem;
+    text-transform: capitalize;
+    /* box-shadow: 0px 2px 6px 0px rgb(50 50 50 / 80%); */
+    /* border-bottom: 3px solid var(--primary_color); */
+    
+}
+.header2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    height: 70px;
+    overflow-y: hidden !important;
+    background-color: white;
+    color: black !important;
+    box-shadow: 0px 2px 6px 0px rgb(50 50 50 / 80%);
+    transition: .7s all ease;
+
+}
+.Topnav{
+    /* background-color: rgba(150, 150, 150, 0.207); */
+   
+}
+.iconsWrapper{
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: yellow;
+}
+.nav-Link{
+    color: inherit !important;
+    padding: 0.5rem 0.2rem;
+    font-size: 2rem;
+    
+}
+.nav-item{ 
+    margin-bottom: 1rem;
+   margin-right: 2rem;
+}
+.Logo{
+    padding: 1rem 0rem;
+}
+.icon{
+    font-size: 2.6rem;
+    margin-right: 0.7rem;
+    cursor: pointer;
+}
+.seacrhWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    cursor: default;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    
+}
+.seacrhWrapper form{
+    width: 70%;
+
+    }
+.search{
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    padding-top: 3rem;
+    border: none;
+    font-size: 4rem;
+}
+.topNotif{
+    background-color: black;
+    color: #8b8b8b;
+    background-color: #fafafa;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    padding: 0.25rem 5rem;
+}
+.marque{
+    width: 100%;
+    margin: 0 1rem;
+}
+.telephone{
+    /* position: absolute;
+    top: 0.7rem;
+    left: 2rem; */
+}
