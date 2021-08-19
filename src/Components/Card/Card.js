@@ -26,7 +26,7 @@ export default function Card(props) {
                     <img src={product.image} alt="" className="p-img" />
                 </div>
                 <div className="product-body center">
-                    <div className="p-title">{product.name}</div>
+                    <div className="p-title">{product.catogery}</div>
                     <div className="p-para">{product.discription}</div>
                     <div className="flexallcenter p-price">
                     <div className={product.oldPrice !== "none"?"p_oldPrice":"hide"}><span>pkr {product.oldPrice}</span></div>

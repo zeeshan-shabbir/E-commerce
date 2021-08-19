@@ -1,7 +1,8 @@
 const Data = [
     {
         id: '1',
-        name: 'bag',
+        catogery: 'bag',
+        color:"pink",
         oldPrice: 1400,
         newPrice: 1000,
         badge: "featuer",
@@ -10,7 +11,8 @@ const Data = [
     },
     {
         id: '2',
-        name: 'Old Car',
+        catogery: 'Old Car',
+        color:"pink",
         oldPrice: 1400,
         newPrice: 1000,
         badge: "none",
@@ -19,7 +21,8 @@ const Data = [
     },
     {
         id: '3',
-        name: 'W Shoes',
+        catogery: 'shoes',
+        color:"pink",
         oldPrice: 1400,
         newPrice: 1000,
         badge: "none",
@@ -28,7 +31,7 @@ const Data = [
     },
     {
         id: '5',
-        name: 'W Shoes',
+        catogery: 'shoes',
         oldPrice: 1400,
         newPrice: 1000,
         badge: "none",
@@ -37,7 +40,7 @@ const Data = [
     },
     {
         id: '6',
-        name: 'W Shoes',
+        catogery: 'shoes',
         oldPrice: 1400,
         newPrice: 1000,
         badge: "none",
@@ -46,7 +49,7 @@ const Data = [
     },
     {
         id: '4',
-        name: 'W Shoes',
+        catogery: 'shoes',
         oldPrice: 1400,
         newPrice: 1000,
         badge: "none",
@@ -55,7 +58,7 @@ const Data = [
     },
     {
         id: '9',
-        name: 'W Shoes',
+        catogery: 'shoes',
         oldPrice: 1400,
         newPrice: 1000,
         badge: "none",
@@ -64,7 +67,7 @@ const Data = [
     },
     {
         id: '10',
-        name: 'W Shoes',
+        catogery: 'shoes',
         oldPrice: 1400,
         newPrice: 1000,
         badge: "none",
@@ -73,7 +76,7 @@ const Data = [
     },
     {
         id: '11',
-        name: 'W Shoes',
+        catogery: 'shoes',
         oldPrice: 1400,
         newPrice: 1000,
         badge: "none",
