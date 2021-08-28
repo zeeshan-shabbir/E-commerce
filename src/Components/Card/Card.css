@@ -2,17 +2,15 @@
 
 .ProductLink{
     display: inline-block;
-    width: 100%;
-    /* margin: 2rem 1rem; */
+    width: 270px;
+    border: 2px solid #8080808f;
+    margin: 1rem;
 }
 .Product{
-    /* box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;    */
     position: relative;
 }
 .Product:hover{
-    /* border: 2px solid red; */
-    box-shadow: rgba(0, 0, 0, 0.419) 0px 5px 15px 5px;
-   
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;   
 }
 .Product:hover .p-img{
     transform: scale(1.2);   

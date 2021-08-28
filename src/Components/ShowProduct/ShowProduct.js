@@ -122,29 +122,11 @@ export default function ShowProduct() {
 
     return (
         <>
-            <h1 >products showing here ...</h1>
+            {/* <h1 >products showing here ...</h1>
             <button onClick={userFilter}>color</button>
             <button onClick={userFilter1}>catogery</button>
             <button onClick={Remove}>remove</button>
-            {/* <Link
-                to={{
-                    // pathname: "/courses",
-                    search: Filter,
-                }}
-                onClick={handleChange}
-                >
-                Color
-            </Link> */}
-            {/* <Link
-                to={{
-                    // pathname: "/courses",
-                    search: "?sort=size",
-                }}>
-                size
-            </Link> */}
-            {/* <button  onClick={handleChange} >
-                    color
-                    </button> */}
+
             <div className="flex flexwrap align-center justify-between showcard">
                 {Data1.map((product) => (
                     <Card key={product.id} product={product}></Card>
@@ -152,7 +134,46 @@ export default function ShowProduct() {
             </div>
             <div>
 
+            </div> */}
+            <div className="mainContainer flex justify=between">
+                <div className="filterSideBar">
+                    <div className="filterHeading">
+                        <h1>Filter</h1>
+                    </div>
+                    <div className="filterContent">
+                        <ul className="filterList">
+                            <li className="filterItem">
+                                <h2 className="filterBtn">
+                                    Color
+                                </h2>
+                                <ul className="colorOption">
+                                    <li className="colorOptionitem">
+                                        <button>red</button>
+                                    </li>
+                                    <li className="colorOptionitem">
+                                        <button>red</button>
+                                    </li>
+                                    <li className="colorOptionitem">
+                                        <button>red</button>
+                                    </li>
+                                    <li className="colorOptionitem">
+                                        <button>red</button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div className="mainContent">
+                    <div className="flex flexwrap align-center justify-evenly showcard">
+                        {Data1.map((product) => (
+                            <Card key={product.id} product={product}></Card>
+                        ))}
+                    </div>
+                </div>
             </div>
+
         </>
     )
 }
