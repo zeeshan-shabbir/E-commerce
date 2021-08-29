@@ -32,7 +32,8 @@
 
 }
 .Topnav{
-    /* background-color: rgba(150, 150, 150, 0.207); */
+  background-color: white;
+  padding-bottom: 2rem;
    
 }
 .iconsWrapper{
@@ -48,7 +49,6 @@
     
 }
 .nav-item{ 
-    margin-bottom: 1rem;
    margin-right: 2rem;
 }
 .Logo{

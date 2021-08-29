@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useLocation, useHistory, useParams } from "react-router-dom";
 import Data from "../../Assets/Data/Data"
 import Card from '../Card/Card'
+import { FilterSideBar } from './Componet/FilterSideBar';
 import './ShowProduct.css'
 export default function ShowProduct() {
     const categorys = ['shoes', 'bag', 'robe', 'pajamas', 'sweater', 'pants'];
@@ -135,36 +136,8 @@ export default function ShowProduct() {
             <div>
 
             </div> */}
-            <div className="mainContainer flex justify=between">
-                <div className="filterSideBar">
-                    <div className="filterHeading">
-                        <h1>Filter</h1>
-                    </div>
-                    <div className="filterContent">
-                        <ul className="filterList">
-                            <li className="filterItem">
-                                <h2 className="filterBtn">
-                                    Color
-                                </h2>
-                                <ul className="colorOption">
-                                    <li className="colorOptionitem">
-                                        <button>red</button>
-                                    </li>
-                                    <li className="colorOptionitem">
-                                        <button>red</button>
-                                    </li>
-                                    <li className="colorOptionitem">
-                                        <button>red</button>
-                                    </li>
-                                    <li className="colorOptionitem">
-                                        <button>red</button>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
+            <div className="mainContainer flex justify-between capitalize">
+               <FilterSideBar />
                 <div className="mainContent">
                     <div className="flex flexwrap align-center justify-evenly showcard">
                         {Data1.map((product) => (

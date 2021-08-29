@@ -7,7 +7,7 @@ export default function Nav() {
     };
     return (
         
-        <div>
+      
                <nav className="navbar">
                         <ul className='flexallcenter'>
                             <li className="nav-item">
@@ -30,6 +30,6 @@ export default function Nav() {
                             </li>
                         </ul>
                     </nav>
-        </div>
+
     )
 }

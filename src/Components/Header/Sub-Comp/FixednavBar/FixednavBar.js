@@ -9,7 +9,7 @@ export default function FixednavBar() {
         <div className="FixednavBar">
              <div className="logoBox container flex justify-between align-center">
                 <Logo />
-                <Nav />
+                <Nav className="fixedNav" />
                 <Icon />
             </div>
         </div>

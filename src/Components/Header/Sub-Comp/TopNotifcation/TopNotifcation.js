@@ -17,8 +17,7 @@ export default function TopNotifcation() {
                 </div>
             </div>
             <div className="marque">   
-                    {/* <marquee scrollamount="5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</marquee> */}
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eius.
+                    <marquee scrollamount="5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</marquee>
             </div>
             <div className="wishDiv flex justify-between">
                 <div className="flexallcenter">
