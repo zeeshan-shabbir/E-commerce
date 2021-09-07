@@ -6,7 +6,7 @@ export default function Card(props) {
     const { product } = props;
     return (
 
-        <Link className="ProductLink" exact
+        <Link className="ProductLink" 
             to="/"
         // to={{
         //     pathname: "/Product_veiw",

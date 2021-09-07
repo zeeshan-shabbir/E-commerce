@@ -14,19 +14,19 @@ export default function Nav() {
                                 <NavLink exact to="/" className='nav-Link' activeStyle={isActive}>Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink exact to="/Woman" className='nav-Link' activeStyle={isActive}>Woman</NavLink>
+                                <NavLink  to="/Woman" className='nav-Link' activeStyle={isActive}>Woman</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink exact to="/Man" className='nav-Link' activeStyle={isActive}>man</NavLink>
+                                <NavLink  to="/Man" className='nav-Link' activeStyle={isActive}>man</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink exact to="/Kid" className='nav-Link' activeStyle={isActive}>kid</NavLink>
+                                <NavLink  to="/Kid" className='nav-Link' activeStyle={isActive}>kid</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink exact to="/Handbag" className='nav-Link' activeStyle={isActive}>Handbag</NavLink>
+                                <NavLink  to="/Handbag" className='nav-Link' activeStyle={isActive}>Handbag</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink exact to="/About" className='nav-Link' activeStyle={isActive}>About us</NavLink>
+                                <NavLink  to="/About" className='nav-Link' activeStyle={isActive}>About us</NavLink>
                             </li>
                         </ul>
                     </nav>

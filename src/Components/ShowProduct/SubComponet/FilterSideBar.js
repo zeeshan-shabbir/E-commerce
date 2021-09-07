@@ -94,7 +94,6 @@ export const FilterSideBar = () => {
 
                 </ul>
             </div>
-
         </div>
 
     )

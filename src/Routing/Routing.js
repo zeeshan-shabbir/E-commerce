@@ -16,6 +16,7 @@ import Handbag from "../Pages/Handbag/Handbag";
 import Header from "../Components/Header/Header";
 import Kid from "../Pages/Kid/Kid";
 import Footer from "../Components/Footer/Footer";
+import ShowProduct from "../Components/ShowProduct/ShowProduct";
 // import Contact from "../Pages/Contact";
 
  const AppRouting = () => {
@@ -23,13 +24,9 @@ import Footer from "../Components/Footer/Footer";
         <Router>
               <Header />
             <Switch>
-            <Route exact path="/">
-                <Home />
-            </Route>
-            <Route exact path="/Woman">
-                <Woman />
-            </Route>
-            <Route exact path="/Man">
+            <Route exact path="/" component={Home}></Route>
+            <Route exact path="/:catogeray"  component={ShowProduct}></Route>
+            {/* <Route exact path="/Man">
                 <Man />
             </Route>
             <Route exact path="/Kid">
@@ -40,7 +37,7 @@ import Footer from "../Components/Footer/Footer";
             </Route>
             <Route exact path="/About">
                 <About />
-            </Route>
+            </Route> */}
             </Switch>     
             <Footer />     
         </Router>

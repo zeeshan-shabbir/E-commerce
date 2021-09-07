@@ -42,3 +42,9 @@
 .hrLine{
    border-bottom: 1.6px solid rgba(0, 0, 0, 0.426);
 }
+.filterClick h1{
+   margin: 1rem 0;
+}
+.filterClickList{
+   font-size: 2rem;
+}

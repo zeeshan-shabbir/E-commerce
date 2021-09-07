@@ -1,7 +1,7 @@
 
 import AppRouting from './Routing/Routing'
 
-import Footer from "./Components/Footer/Footer";
+// import Footer from "./Components/Footer/Footer";
 
 import "./css folder/App.css"
 import "./css folder/utilities.css"
