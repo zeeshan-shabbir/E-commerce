@@ -10,8 +10,14 @@ export default function Footer() {
     return (
         <div className="footerWrapper">
             <div className="footer flex align-items justify-between capitalize">
-                <div className="aboutWrapper">                
-                        <h1>About us</h1>
+                <div className="footerContent">
+                    <h1>footer content</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, ad. Vero cumque et mollitia ratione perferendis porro omnis, error repudiandae velit suscipit nesciunt ex sint neque fuga aliquid vel. Rerum.
+                    </p>
+                </div>
+                <div className="aboutWrapper">
+                    <h1>About us</h1>
                     <ul className="flexallcenter">
                         <li className="aboutItem">
                             <a href="#" className="aboutLink">About us</a>
@@ -27,14 +33,8 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
-                <div className="footerContent">
-                    <h1>footer content</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, ad. Vero cumque et mollitia ratione perferendis porro omnis, error repudiandae velit suscipit nesciunt ex sint neque fuga aliquid vel. Rerum.
-                    </p>
-                </div>
                 <div className="customerWrapper">
-                <h1>customer care</h1>
+                    <h1>customer care</h1>
                     <ul className="flexallcenter">
                         <li className="customerItem">
                             <a href="#" className="customerLink">contact us</a>

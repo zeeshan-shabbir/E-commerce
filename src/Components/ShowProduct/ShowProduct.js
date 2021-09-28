@@ -6,24 +6,26 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { FilterSideBar } from './SubComponet/FilterSideBar';
 import './ShowProduct.css'
 export default function ShowProduct() {
-    const { catogeray: catogeray } = useParams();
+    
+    const { category: category } = useParams();
+    console.log(category);
     const FilterAvailable = [
         {
             catogery: 'color',
             options: ['white', 'black', 'brown', 'navy', 'blue', 'yellow', 'pink', 'purple', 'beige', 'red', 'green'],
         },
         {
-            catogery: 'catogery',
-            options: ['shoes', 'bag', 'robe', 'pajamas', 'sweater', 'pants'],
+            catogery: 'size',
+            options: ['extra small', 'small', 'medium', 'large', 'extra large', 'xxl'],
         },
     ]
     // const [Data1, setData1] = useState(Data);
-    let FilterDataCat = Data.filter((item) => item.catogery == catogeray.toLowerCase())
-    const [Data1, setData1] = useState(FilterDataCat);
+    let FilterDataCat = Data.filter((item) => item.category == category.toLowerCase())
     useEffect(() => {
         setData1(FilterDataCat)
-    }, [catogeray]);
-
+    }, [category]);
+    const [Data1, setData1] = useState(FilterDataCat);
+console.log("renderning");
     let location = useLocation();
     let history = useHistory();
     let searchParams = new URLSearchParams(location.search);
@@ -80,56 +82,9 @@ export default function ShowProduct() {
         }
       
     }
-            // let exp = Object.keys(keyword).pop().toString();
-            // console.log(exp,"expression");
-            // switch (exp) {
-                //     case "color":
-                //         console.log("in color");
-                //          console.log(keyword[key],"keyword[key]");
-                //           let y=item.color.includes(keyword[key])
-                //           console.log(!y,"item[key]");
-                //           return !y
-                // case "catogery":
-                //     console.log("In catogery");
-            //     let FilterData = Data1.filter(function (item) {
-            //     for (var key in keyword) {
-            //         let exp = Object.keys(keyword).pop().toString();
-            //         console.log(exp, "expression");   
-            //         switch (exp) {
-            //             case "color":
-            //                 console.log("in color");              
-            //                 console.log("keyword",keyword.color);               
-            //                 let y = item.color.includes(keyword.color)
-            //                 console.log(y, "item[key]");
-            //                 return y
-            //             case "catogery":
-            //                 console.log("In catogery");
-            //                     console.log(keyword.catogery, "keyword[key]");
-            //                 if (item.catogery === undefined || item.catogery  != keyword.catogery){
-            //                     return false;
-            //                 }else{
-            //                     return true
-            //                 }
-            //             default:
-            //                 console.log("In defualt");
-            //                 return true
-            //         }
-            //         // }
-            //         // default:
-            //         //   console.log("default");
-            //         //   for (var key in keyword) {
-            //         //     if (item[key] === undefined ||  item[key] != keyword[key])
-            //         //         return false;
-            //         // }
-            //         // return true;
-            //     }
-    
-            // });
-            // console.log("filter", FilterData);
-            // setData1(FilterData)
-    
+      
 
-    const Remove = (params) => {
+    const Remove = () => {
         searchParams.delete("color")
         history.replace({
             search: searchParams.toString(),
@@ -140,6 +95,7 @@ export default function ShowProduct() {
 
     const [filterClickOption, setfilterClickOption] = useState([])
     const addRemoveQuery = (key, value) => {
+      
         let obj = {
             key,
             value,
@@ -213,30 +169,30 @@ export default function ShowProduct() {
                         <h1>Filter</h1>
                     </div>
 
-                    <div className="filterClick">
+                   {filterClickOption.length!==0 && <div className="filterClick">
                         <h1>Shopping By</h1>
                         <div>
-                            {filterClickOption.map((item) => {
+                            { filterClickOption.map((item) => {
                                 return <>
                                     <ul className="filterClickList">
                                         <li>
-                                            <button className="" onClick={() => { removeQuery(item.key) }}>x</button> <strong>{item.key}</strong> : <span>{item.value}</span>
+                                            <button className="clearOne" onClick={() => { removeQuery(item.key) }}>x</button> <strong>{item.key}</strong> : <span>{item.value}</span>
                                         </li>
                                     </ul>
                                 </>
                             })
                             }
-                            <div>
-                                <span>clear all</span>
+                            <div className="center">
+                                <span className="clearAll">clear all</span>
                             </div>
                         </div>
-                    </div>
+                    </div>}
 
 
                     <div className="filterContent">
                         <ul className="filterList">
                             {FilterAvailable.map((item, id) => {
-                                return <FilterItem item={item} key={id} id={id} />;
+                                return <FilterItem item={item} key={id}/>;
                             })}
 
 

@@ -8,38 +8,30 @@ import {
 // import '../css folder/utilities.css'
 
 
-import  Home  from "../Pages/Home/Home";
-import  About  from "../Pages/About/About";
-import Woman  from "../Pages/Woman/Woman";
+import Home from "../Pages/Home/Home";
+import About from "../Pages/About/About";
+import Woman from "../Pages/Woman/Woman";
 import Man from "../Pages/Men/Men";
 import Handbag from "../Pages/Handbag/Handbag";
 import Header from "../Components/Header/Header";
 import Kid from "../Pages/Kid/Kid";
 import Footer from "../Components/Footer/Footer";
 import ShowProduct from "../Components/ShowProduct/ShowProduct";
+import ProductDetail from "../Components/ProductDetail/ProductDetail";
 // import Contact from "../Pages/Contact";
 
- const AppRouting = () => {
+const AppRouting = () => {
     return (
         <Router>
-              <Header />
+            <Header />
             <Switch>
-            <Route exact path="/" component={Home}></Route>
-            <Route exact path="/:catogeray"  component={ShowProduct}></Route>
-            {/* <Route exact path="/Man">
-                <Man />
-            </Route>
-            <Route exact path="/Kid">
-                <Kid />
-            </Route>
-            <Route exact path="/Handbag">
-                <Handbag />
-            </Route>
-            <Route exact path="/About">
-                <About />
-            </Route> */}
-            </Switch>     
-            <Footer />     
+                <Route exact path="/" component={Home}></Route>
+                <Route exact path="/:category" component={ShowProduct}></Route>
+                <Route path="/Product/:id/:category/:productName">
+                    <ProductDetail />
+                </Route>
+            </Switch>
+            <Footer />
         </Router>
     )
 }
