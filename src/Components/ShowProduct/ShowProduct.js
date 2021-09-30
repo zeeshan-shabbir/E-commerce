@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect,useContext } from 'react'
+import { GlobalContext } from '../../context/context'
 import { Link, useLocation, useHistory, useParams } from "react-router-dom";
 import Data from "../../Assets/Data/Data"
 import Card from '../Card/Card'
