@@ -2,7 +2,7 @@ import React from 'react'
 import Card from '../../Components/Card/Card'
 import Slider from '../../Components/slider/Slider'
 import Data from "../../Assets/Data/Data"
-import FeatureProduct from '../../Components/Feature Product/FeatureProduct';
+import SpecailProduct from '../../Components/Specail Product/SpecailProduct';
 
 export default function Home() {
   console.log(Data);
@@ -13,8 +13,8 @@ export default function Home() {
           {/* {Data.map((product) => (
                         <Card key={product.id} product={product}></Card>
                     ))} */}
-          <FeatureProduct />
-          <FeatureProduct />
+          <SpecailProduct name="Feature Product"/>
+          <SpecailProduct  name="Latest Product"/>
         </div>
     )
 }

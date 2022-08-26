@@ -26,6 +26,7 @@
    border: none;
 }
 .filterHeading{
+   border-bottom: 2px solid rgba(0, 0, 0, 0.823);
    font-size: 2rem;
    text-transform: uppercase;
 }
@@ -47,4 +48,49 @@
 }
 .filterClickList{
    font-size: 2rem;
+}
+.filterClickList li{
+  margin: 1rem 0;
+}
+.clearAll{
+   font-size: 2rem;
+   color: red;
+   cursor: pointer;
+   transition: all .3s ease;
+   padding: 0.5rem 1rem;
+
+}
+.clearOne{
+   cursor: pointer;
+  background-color:transparent;
+  /* border: 2px solid black; */
+  border: none;
+  font-size: 2rem;
+  padding: 0 1rem;
+
+}
+.clearOne:hover{
+   background-color: rgb(249 64 64);
+   color: white;
+
+}
+.clearAll:hover{
+   background-color: rgb(249 64 64);
+   color: white;
+
+}
+/* detail product  */
+.detProWrapper{
+   /* border: 3px solid red; */
+   width: 80%;
+   margin: auto;
+   font-size: 3rem;
+}
+.detProImage,.detProContent{
+   width: 50%;
+}
+.detProImageBox{
+   height: 50rem;
+   width: 40rem;
+   /* margin: 5rem 0; */
 }

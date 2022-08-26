@@ -4,11 +4,11 @@ import Data from '../../Assets/Data/Data'
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/swiper-bundle.min.css";
-import "./FeatureProduct.css"
+import "./SpecailProduct.css"
 import Card from '../Card/Card';
 import { GrPrevious } from 'react-icons/gr';
 import { GrNext } from 'react-icons/gr';
-export default function FeatureProduct() {
+export default function SpecailProduct({name}) {
     SwiperCore.use([Navigation, Pagination])
     const SliderConfigs = {
         speed: 1500,
@@ -22,7 +22,7 @@ export default function FeatureProduct() {
         },
         autoplay: {
             delay: 3000,
-            disableOnInteraction:false,
+            disableOnInteraction: false,
             pauseOnMouseEnter: true,
         },
     };
@@ -40,20 +40,20 @@ export default function FeatureProduct() {
     return (
         <div className="FProducts">
             <div className="fpWrapper flex align-center justify-between">
-            <div className="FP-h1">
-                <h1>Feature Products</h1>
+                <div className="FP-h1">
+                    <h1>{name}</h1>
+                </div>
+                <div className="swiperBtns">
+                    <button onClick={goPrev} className="swiperBtn">
+                        <GrPrevious />
+                    </button>
+                    <button onClick={goNext} className="swiperBtn">
+                        <GrNext />
+                    </button>
+                </div>
+
             </div>
-            <div className="swiperBtns">
-                <button onClick={goPrev} className="swiperBtn">
-                    <GrPrevious />
-                </button>
-                <button onClick={goNext} className="swiperBtn">
-                    <GrNext />
-                </button>
-            </div>
-           
-            </div>
-            
+
             <Swiper {...SliderConfigs} ref={swiperRef}>
                 {Data.map((product) => (
                     <SwiperSlide className="swiperSlide">

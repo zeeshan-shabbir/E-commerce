@@ -1,7 +1,8 @@
 import React from 'react'
-import slide1 from "../../Assets/Images/slider/slider4.jpg"
+import slide1 from "../../Assets/Images/slider/slider1.jpg"
 import slide2 from "../../Assets/Images/slider/slider2.jpg"
 import slide3 from "../../Assets/Images/slider/slider3.jpg"
+
 
 // Import Swiper React components
 import SwiperCore, { Autoplay,  Navigation, Pagination } from 'swiper';

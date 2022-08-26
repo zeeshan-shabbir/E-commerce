@@ -43,10 +43,15 @@
     background-color: yellow;
 }
 .nav-Link{
-    color: inherit !important;
+    color: inherit ;
     padding: 0.5rem 0.2rem;
     font-size: 2rem;
+    transition: all .4s ease;
     
+}
+.nav-Link:hover{
+    color: white !important;
+    background-color: rgb(39, 39, 39) !important;
 }
 .nav-item{ 
    margin-right: 2rem;

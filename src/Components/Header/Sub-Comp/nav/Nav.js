@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 export default function Nav() {
     const isActive = {
         fontWeight: "bold",
-        backgroundColor: "rgba(255, 255, 255, 0.1)",
+        color:"white",
+        backgroundColor: "rgba(0, 0, 0, 0.3)",
     };
     return (
         
@@ -17,7 +18,7 @@ export default function Nav() {
                                 <NavLink  to="/Woman" className='nav-Link' activeStyle={isActive}>Woman</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink  to="/Man" className='nav-Link' activeStyle={isActive}>man</NavLink>
+                                <NavLink  to="/Men" className='nav-Link' activeStyle={isActive}>men</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink  to="/Kid" className='nav-Link' activeStyle={isActive}>kid</NavLink>
@@ -26,7 +27,7 @@ export default function Nav() {
                                 <NavLink  to="/Handbag" className='nav-Link' activeStyle={isActive}>Handbag</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink  to="/About" className='nav-Link' activeStyle={isActive}>About us</NavLink>
+                                <NavLink  to="/jewelery" className='nav-Link' activeStyle={isActive}>jewelery</NavLink>
                             </li>
                         </ul>
                     </nav>

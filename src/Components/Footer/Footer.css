@@ -2,19 +2,21 @@
 
 .footerWrapper{
 	
-	background-color: black;
+	/* background-color: white; */
 }
 .footer{
 	max-width: 110rem;
 	margin: 0 auto;
-	color: white;
+	color: black;
 	font-size: 3.5rem;
 	padding-top: 2rem;
 
 }
 .footer>div{
-	width: 30rem;
-	text-align: center;
+	width: 100%;
+	text-align: left;
+}
+.customerLink,.aboutLink{
 }
 .footer ul{
 	flex-direction: column;
@@ -30,7 +32,7 @@
 }
 .footer li a{
 	font-size: 50%;
-	color: white;
+	color: black;
 }
 .footerContent p{
 	font-size: 50%;
