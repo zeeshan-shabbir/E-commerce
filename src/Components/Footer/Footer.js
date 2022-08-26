@@ -18,7 +18,7 @@ export default function Footer() {
                 </div>
                 <div className="aboutWrapper">
                     <h1>About us</h1>
-                    <ul className="flexallcenter">
+                    <ul className="flex">
                         <li className="aboutItem">
                             <a href="#" className="aboutLink">About us</a>
                         </li>
@@ -35,7 +35,7 @@ export default function Footer() {
                 </div>
                 <div className="customerWrapper">
                     <h1>customer care</h1>
-                    <ul className="flexallcenter">
+                    <ul className="flex">
                         <li className="customerItem">
                             <a href="#" className="customerLink">contact us</a>
                         </li>
@@ -52,6 +52,25 @@ export default function Footer() {
                             <a href="#" className="customerLink">FAQ</a>
                         </li>
                     </ul>
+                </div>
+                <div className="FlogoWrapper">
+                    <div className="fLogo">
+                       <h1> the best shop</h1>
+                    </div>
+                    <div className="socailLogos">
+                        <a href="" className="socail">
+                            <SiGmail />
+                        </a>
+                        <a href="" className="socail">
+                            <FaFacebookF />
+                        </a>
+                        <a href="" className="socail">
+                            <FaLinkedinIn />
+                        </a>
+                        <a href="" className="socail">
+                            <FiFacebook />
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="hr"></div>

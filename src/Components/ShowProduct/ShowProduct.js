@@ -7,6 +7,8 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { FilterSideBar } from './SubComponet/FilterSideBar';
 import './ShowProduct.css'
 export default function ShowProduct() {
+    // const { state, dispatch } = useContext(GlobalContext);
+    // console.log(state,"data");
     
     const { category: category } = useParams();
     console.log(category);

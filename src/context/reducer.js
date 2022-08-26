@@ -1,5 +1,6 @@
 
-
+import Data from "../Assets/Data/Data.js"
+console.log(Data,"data");
 
 export let data = {
     snacks: 'Rio',

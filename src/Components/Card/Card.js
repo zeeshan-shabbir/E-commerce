@@ -42,6 +42,14 @@ export default function Card(props) {
                     <div className={product.oldPrice !== "none"?"p_oldPrice":"hide"}><span>pkr {product.oldPrice}</span></div>
                     <div className="p_newPrice"><span>pkr {product.newPrice}</span></div>
                     </div>
+                    <div className="colors">
+                        colors=
+                        {product.color.map((colors)=>{
+                            return(
+                                <span style={{fontSize:"15px",marginRight:10}}>{colors}</span>
+                            )
+                        })}
+                    </div>
                     <div className="flex align-center justify-around">
                     <button className="addToCart btn" onClick={addToCart}>Add to cart</button>
                     <button className="addToCart btn">wishlist</button>

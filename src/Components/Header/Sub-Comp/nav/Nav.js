@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 export default function Nav() {
     const isActive = {
         fontWeight: "bold",
-        backgroundColor: "rgba(0, 0, 0, 0.5)",
+        color:"white",
+        backgroundColor: "rgba(0, 0, 0, 0.3)",
     };
     return (
         

@@ -13,8 +13,8 @@ export default function Home() {
           {/* {Data.map((product) => (
                         <Card key={product.id} product={product}></Card>
                     ))} */}
-          <SpecailProduct />
-          <SpecailProduct />
+          <SpecailProduct name="Feature Product"/>
+          <SpecailProduct  name="Latest Product"/>
         </div>
     )
 }

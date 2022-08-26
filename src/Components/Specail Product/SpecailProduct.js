@@ -8,7 +8,7 @@ import "./SpecailProduct.css"
 import Card from '../Card/Card';
 import { GrPrevious } from 'react-icons/gr';
 import { GrNext } from 'react-icons/gr';
-export default function SpecailProduct() {
+export default function SpecailProduct({name}) {
     SwiperCore.use([Navigation, Pagination])
     const SliderConfigs = {
         speed: 1500,
@@ -41,7 +41,7 @@ export default function SpecailProduct() {
         <div className="FProducts">
             <div className="fpWrapper flex align-center justify-between">
                 <div className="FP-h1">
-                    <h1>Feature Products</h1>
+                    <h1>{name}</h1>
                 </div>
                 <div className="swiperBtns">
                     <button onClick={goPrev} className="swiperBtn">
